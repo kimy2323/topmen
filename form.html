@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Form Design </title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        }
+        html,body{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+        background: #f2f2f2;
+        margin-top: 50px;
+        }
+        .wrapper{
+        width: 380px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+        }
+        .wrapper .title{
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 100px;
+        color: #fff;
+        user-select: none;
+        border-radius: 15px 15px 0 0;
+        background: linear-gradient(-135deg, #c850c0, #4158d0);
+        }
+        .wrapper form{
+        padding: 10px 30px 50px 30px;
+        }
+        .wrapper form .field{
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        }
+        .wrapper form .field input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 17px;
+        padding-left: 20px;
+        border: 1px solid lightgrey;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        }
+        .wrapper form .field label{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: #999999;
+        font-weight: 400;
+        font-size: 17px;
+        pointer-events: none;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+        }
+        form .content{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: space-around;
+        }
+        form .content .checkbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        form .content input{
+        width: 15px;
+        height: 15px;
+        background: red;
+        }
+        form .content label{
+        color: #262626;
+        user-select: none;
+        padding-left: 5px;
+        }
+        form .content .pass-link{
+        color: "";
+        }
+        form .field input[type="submit"]{
+        color: #fff;
+        border: none;
+        padding-left: 0;
+        margin-top: -10px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        background: linear-gradient(-135deg, #c850c0, #4158d0);
+        transition: all 0.3s ease;
+        }
+        form .field input[type="submit"]:active{
+        transform: scale(0.95);
+        }
+        form .signup-link{
+        color: #262626;
+        margin-top: 20px;
+        text-align: center;
+        }
+
+        form .pass-link a:hover,
+        form .signup-link a:hover{
+        text-decoration: underline;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: 'Baloo 2', cursive;
+        }
+        .head{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            box-shadow: 0 0.5px 20px rgb(61, 61, 61);
+        }
+
+        .logo{
+            width: 100px;
+            margin-left: 50px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            padding: 0 25px;
+            color: #2e2552;
+            font-size: 20px;
+        }
+
+        .menu a:hover{
+            color: #dd262a;
+        }
+
+        .icon{
+            margin-right: 50px;
+        }
+
+        .icon a{
+            font-size: 30px;
+            color: #2e2552;
+            padding: 0 10px;
+        }
+
+        .icon a:hover{
+            color: #dd262a;
+        }
+      </style>
+   </head>
+   <body>
+    <div class="head">
+        <a href="index.html"><img class="logo" src="./LUD.MEN .png"></a>
+        <div class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a> 
+            <a href="">Sản phẩm</a> 
+            <a href="">Giảm giá</a> 
+            <a href="">Liên hệ</a>  
+        </div>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="form.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+         <form action="#">
+            <div class="field">
+               <input type="text" required>
+               <label>Email</label>
+            </div>
+            <div class="field">
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+            <div class="content">
+               <div class="checkbox">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Nhớ mật khẩu</label>
+               </div>
+               <div class="pass-link">
+                  <a href="#">Quên mật Khẩu?</a>
+               </div>
+            </div>
+            <div class="field">
+               <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">
+               <a href="#">Đăng kí ngay</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

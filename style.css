@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5px 20px rgb(61, 61, 61);
+}
+
+.logo{
+    width: 100px;
+    margin-left: 50px;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 0 25px;
+    color: #2e2552;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: #dd262a;
+}
+
+.icon{
+    margin-right: 50px;
+}
+
+.icon a{
+    font-size: 30px;
+    color: #2e2552;
+    padding: 0 10px;
+}
+
+.icon a:hover{
+    color: #dd262a;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height:100vh;
+    background: url(./uk.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 60px;
+}
+
+.home .texthome{
+    max-width: 800px;
+    padding: 5%;
+}
+
+.home .texthome h3{
+    margin-top: 60px;
+    font-size: 50px;
+    line-height: 90px;
+    color: #e9e3e3;
+    font-family: 'BioRhyme', serif;
+}
+
+.home .texthome p{
+    margin-top: 0px;
+    font-size: 30px;
+    color: #2e2552;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.than{
+    float: left;
+    height: 950px;
+    margin-bottom: 200px;
+}
+
+.left{
+    width: 220px;
+    height: 930px;
+    float: left;
+    display: block;
+    
+    padding-top: 20px;
+}
+
+.left h2{
+    text-align: center;
+    font-size: 22px;
+    color: #dd262a;
+    margin-bottom: 10px;
+}
+
+.left .hieu{
+    padding-left: 5px;
+}
+
+.left .hieu form{
+    text-align: left;
+    color: #333;
+    padding-left: 5px;
+}
+
+.left .hieu h3{
+    padding-top: 10px;
+}
+
+.product{
+    margin-left: 20px;
+}
+
+.product h1{
+    padding-top: 10px;
+    padding-left: 220px;
+}
+
+.product .box-container{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px;
+}
+
+.product .box-container .box{
+    flex: 1 1 480px;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.product .box-container .box .image{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product .box-container .box .image img{
+    height: 250px;
+    background-color: #d3d6db;
+    margin-bottom: 50px;
+}
+
+.product .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.product .box-container .box .image .icon{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: 0;
+}
+
+.product .box-container .box .image .icon a{
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    width: 50%;
+    background: white;
+    color: #2e2552;
+} 
+
+.product .box-container .box .image .icon .sao{
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    width: 50%;
+    background: white;
+    color: orange;
+    
+} 
+
+.product .box-container .box .image .icon a:hover:not(.sao){
+    color: #dd262a;
+}
+
+.product .box-container .box .content{
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.product .box-container .box .content h3{
+    font-size: 30px;
+    color: #333;
+    line-height: 35px;
+}
+
+.product .box-container .box .content .tien{
+    font-size: 20px;
+    color: #333;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.footer{
+    float: left;
+    padding: 0 50px;
+    background-color: #333;
+    
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 300px;
+}
+
+.footer .box-container .box{
+    flex: 1 1 350px;
+}
+
+.footer .box-container .box h3{
+    color: whitesmoke ;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: rgb(224, 223, 223);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.footer .box-container .box div a:hover{
+    color: #dd262a;
+}
+
+.footer .cre{
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color: rgb(224, 223, 223);
+    border-top: 1px solid #999;
+}
